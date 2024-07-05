@@ -590,4 +590,77 @@ color: #088178;
     width: 100%;
     
 }
-
+/*form*/
+.contain{
+    margin: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.fbox{
+    position: relative;
+    width: 550px;
+    height:550px;
+    border: 2px solid rgb(6, 92, 95);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbox h2{
+    color: #088170;
+    text-align: center;
+    font-size: 32px;
+}
+.fbox .input{
+    position: relative;
+    margin: 30px;
+    width: 310px;
+    border-bottom: 2px solid #707680;
+}
+.fbox .input input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline:none;
+    padding: 0px 20px 0px 15px;
+    color: #088170;
+    font-size: 16px;
+}
+input::placeholder{
+    color: #088178;
+}
+.btn{
+    color: #cce7d0;
+    background: #041e42;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow:black;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+.group span a{
+    color:#088170 ;
+    position: relative;
+    top: 10px;
+    text-decoration: none ;
+    font-weight: 500;
+}
+.group a:focus{
+    text-decoration: underline;
+}
+.icon{
+    position: absolute;
+    color: #088170;
+    top:13px;
+    right: 0;
+}
