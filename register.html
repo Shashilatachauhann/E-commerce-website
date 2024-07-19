@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech stuff</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bgimg">
+    <section id="header">
+        <a href="#"><img src="images/LOGO.PNG" class="logo"
+                alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="about.html">About</a></li>
+                <li><a class="" href="contact.html">Contact</a></li>
+                <li><a class="active" href="register.html">Register</a></li>
+                <li><a id="lg-bag" class="" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+    </section>
+    <section id="form">
+        <div class="contain">
+            <div class="fbox">
+                <form action="" name="formfill" onsubmit="return validation()">
+                    <h2>Register</h2>
+                    <p id="result"></p>
+                    <div class="input">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" name="Username" placeholder="Username">
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" name="email" placeholder="Email Id">
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-lock icon"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-lock icon"></i>
+                        <input type="password" name="cpassword" placeholder="Confirm password">
+                    </div>
+                    <div class="button">
+                        <input type="submit" class="btn" onclick="validation()" value="Register">
+                    </div>
+                    <div class="group">
+                        <span><a href="#">Forget-Password</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="popup" id="popup">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <h2>Thank you!</h2>
+                <p>you are registered successfully. Thanks!</p>
+                <a href="index.html"><button onclick="CloseSlide()">OK</button></a>
+            </div>
+        </div>
+    </section>
+    <script src="tech.js"></script>
+</body>
+
+</html>
